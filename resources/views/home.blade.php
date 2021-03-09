@@ -7,12 +7,46 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>Benvenuti nella prima home page con Laravel</h1>
+    <style>
+        .contenitore {
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        ul li {
+            width: calc(100% / 8);
+            font-size: 20px;
 
-    <ul>
-        @foreach ($lista as $k => $el)
+        }
+        ul li a {
+            text-decoration: none;
+            color: gray;
+            cursor: pointer;
+        }
+        ul li:hover a {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="contenitore">
+        <h1>Benvenuti nella prima home page con Laravel</h1>
+        
+        <ul>
+            @foreach ($lista as $k => $el)
             <li><a href="{{ $k }}">{{ $el }}</a></li>
-        @endforeach
-    </ul>
+            @endforeach
+        </ul>
+    </div>
 </body>
 </html>
