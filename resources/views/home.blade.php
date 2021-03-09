@@ -23,7 +23,8 @@
         }
         h1 {
             text-align: center;
-            color: red;
+            color: yellowgreen;
+            padding-bottom: 20px;
         }
         ul {
             list-style: none;

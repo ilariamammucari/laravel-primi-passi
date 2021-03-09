@@ -7,10 +7,45 @@
     <title>Contatti</title>
 </head>
 <body>
-    <ul>
-        @foreach ($contatti as $contatto)
-            <li>{{ $contatto }}</li>
-        @endforeach
-    </ul>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenitore {
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+        ul {
+            list-style: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        ul li {
+            font-size: 50px;
+            color: gray;
+        }
+        ul li a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        ul li:first-child {
+            color: yellowgreen;
+        }
+    </style>
+    <div class="contenitore">
+        <ul>
+            <li>Contatti: </li>
+            @foreach ($contatti as $contatto)
+                <li>{{ $contatto }}</li>
+            @endforeach
+        </ul>
+    </div>
 </body>
 </html>

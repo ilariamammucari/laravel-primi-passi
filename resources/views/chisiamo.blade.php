@@ -7,6 +7,27 @@
     <title>Chi siamo</title>
 </head>
 <body>
-    <h2>{{ $chisiamo }}</h2>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenitore {
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            text-align: center;
+        }
+        h2 {
+            font-size: 50px;
+            color: yellowgreen;
+            text-transform: uppercase;
+            line-height: 100vh;
+        }
+    </style>
+    <div class="contenitore">
+        <h2>{{ $chisiamo }}</h2>
+    </div>
 </body>
 </html>

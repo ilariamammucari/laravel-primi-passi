@@ -20,6 +20,7 @@
             text-align: center;
         }
         p {
+            font-size: 50px;
             color: gray;
             text-transform: uppercase;
             line-height: 100vh;
