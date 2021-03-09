@@ -7,12 +7,32 @@
     <title>Progetti</title>
 </head>
 <body>
-    <p>
-        @forelse ($progetti as $progetto)
-            {{ $progetto }}
-        @empty
-            Nessun progetto creato!
-        @endforelse
-    </p>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenitore {
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            text-align: center;
+        }
+        p {
+            color: gray;
+            text-transform: uppercase;
+            line-height: 100vh;
+        }
+    </style>
+    <div class="contenitore">
+        <p>
+            @forelse ($progetti as $progetto)
+                {{ $progetto }}
+            @empty
+                Nessun progetto creato
+            @endforelse
+        </p>
+    </div>
 </body>
 </html>

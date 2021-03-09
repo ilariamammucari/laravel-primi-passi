@@ -8,6 +8,11 @@
 </head>
 <body>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .contenitore {
             width: 1200px;
             height: 100vh;
@@ -44,7 +49,7 @@
         
         <ul>
             @foreach ($lista as $k => $el)
-            <li><a href="{{ $k }}">{{ $el }}</a></li>
+            <li><a href="{{ ($k) }}">{{ $el }}</a></li>
             @endforeach
         </ul>
     </div>
