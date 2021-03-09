@@ -10,9 +10,9 @@
     <h1>Benvenuti nella prima home page con Laravel</h1>
 
     <ul>
-        <li><a href="/chisiamo">{{ $chisiamo }}</a></li>
-        <li><a href="/progetti">{{ $progetti }}</a></li>
-        <li><a href="/contatti">{{ $contatti }}</a></li>
+        @foreach ($lista as $k => $el)
+            <li><a href="{{ $k }}">{{ $el }}</a></li>
+        @endforeach
     </ul>
 </body>
 </html>
