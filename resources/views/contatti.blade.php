@@ -41,7 +41,7 @@
     </style>
     <div class="contenitore">
         <ul>
-            <li>Contatti: </li>
+            <li>I nostri contatti: </li>
             @foreach ($contatti as $contatto)
                 <li>{{ $contatto }}</li>
             @endforeach
